@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Glitch Syndicate</title>
+<meta name="description" content="The Glitch Syndicate — an independent gamer clan. Currently in development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <span class="logo-mark">TGSyndicate</span>
+  <nav class="site-nav">
+    <a href="diary.html">Journal</a>
+  </nav>
+  <span class="status-pill"><span class="dot"></span> in development</span>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 class="glitch-text" data-text="THE GLITCH SYNDICATE">THE GLITCH SYNDICATE</h1>
+    <p class="tagline">An independent gamer clan.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>What we're building</h2>
+    <p>
+      We're a small, independent gamer clan currently heads-down. No promos, no shortcuts, just gaming. This site will
+      grow as clan does.
+    </p>
+  </section>
+
+  <section class="split">
+    <div class="card" id="contact">
+      <h2>Get in touch</h2>
+      <p class="card-sub">Questions, feedback, or just want to say hi — send it over.</p>
+
+      <!-- Swap YOUR_FORM_ID for your real Formspree endpoint ID once you've created one -->
+      <form class="query-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Honeypot field to cut down on spam bots -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <button type="submit">Send message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="card" id="follow">
+      <h2>Stay updated</h2>
+      <p class="card-sub">Get an email when there's real news — no spam, no schedule, just updates as they happen.</p>
+
+      <!-- Swap YOUR_USERNAME for your real Buttondown username once you've created an account -->
+      <form class="mail-form" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME" method="POST" target="popupwindow">
+        <label for="bd-email">Email</label>
+        <div class="mail-row">
+          <input type="email" id="bd-email" name="email" required placeholder="you@example.com">
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> The Glitch Syndicate</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

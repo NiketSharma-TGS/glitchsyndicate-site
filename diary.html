@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal — The Glitch Syndicate</title>
+<meta name="description" content="Journal entries for The Glitch Syndicate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="index.html" class="logo-mark" style="text-decoration:none;">TGSyndicate</a>
+  <nav class="site-nav">
+    <a href="diary.html" aria-current="page">Journal</a>
+  </nav>
+  <span class="status-pill"><span class="dot"></span> in development</span>
+</header>
+
+<main>
+  <section class="hero diary-hero">
+    <h1 class="glitch-text" data-text="JOURNAL" style="font-size: clamp(1.8rem, 5vw, 3rem);">JOURNAL</h1>
+    <p class="tagline">Occasional notes from the build. Posted when there's something worth saying.</p>
+  </section>
+
+  <section class="diary-list" id="diary-list" aria-live="polite">
+    <p class="diary-empty">Loading entries…</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; <span id="year"></span> The Glitch Syndicate</span>
+</footer>
+
+<script src="diary.js"></script>
+</body>
+</html>
