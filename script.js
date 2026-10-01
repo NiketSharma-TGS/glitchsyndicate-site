@@ -1,7 +1,7 @@
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// "Dev Updates" card: show the newest journal entry from diary/entries.json
+// "Updates" card: show the newest journal entry from diary/entries.json
 const latestEl = document.getElementById('latest-entry');
 
 function escapeHtml(str) {

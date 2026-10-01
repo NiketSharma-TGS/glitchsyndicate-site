@@ -332,7 +332,7 @@ button:hover { opacity: 0.9; }
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Dev Updates card (homepage) */
+/* Updates card (homepage) */
 .latest-title {
   margin: 0 0 8px;
   font-size: 1.05rem;
