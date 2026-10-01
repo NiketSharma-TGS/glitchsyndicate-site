@@ -39,41 +39,22 @@
   </section>
 
   <section class="split">
-    <div class="card" id="contact">
-      <h2>Get in touch</h2>
-      <p class="card-sub">Questions, feedback, or just want to say hi — send it over.</p>
+    <div class="card" id="updates">
+      <h2>Dev Updates</h2>
+      <p class="card-sub">The latest from the build.</p>
 
-      <!-- Swap YOUR_FORM_ID for your real Formspree endpoint ID once you've created one -->
-      <form class="query-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="_replyto" required>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <!-- Honeypot field to cut down on spam bots -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-
-        <button type="submit">Send message</button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
+      <div id="latest-entry" aria-live="polite">
+        <p class="diary-empty">Loading…</p>
+      </div>
+      <a class="card-link" href="diary.html">All updates &rarr;</a>
     </div>
 
-    <div class="card" id="follow">
-      <h2>Stay updated</h2>
-      <p class="card-sub">Get an email when there's real news — no spam, no schedule, just updates as they happen.</p>
+    <div class="card" id="contact">
+      <h2>Get in touch</h2>
+      <p class="card-sub">Questions, feedback, or just want to say hi.</p>
 
-      <!-- Swap YOUR_USERNAME for your real Buttondown username once you've created an account -->
-      <form class="mail-form" action="https://buttondown.com/api/emails/embed-subscribe/YOUR_USERNAME" method="POST" target="popupwindow">
-        <label for="bd-email">Email</label>
-        <div class="mail-row">
-          <input type="email" id="bd-email" name="email" required placeholder="you@example.com">
-          <button type="submit">Subscribe</button>
-        </div>
-      </form>
+      <!-- Placeholder: replace hello@example.com in BOTH places below with your real address -->
+      <a class="contact-email" href="mailto:hello@example.com">hello@example.com</a>
     </div>
   </section>
 </main>

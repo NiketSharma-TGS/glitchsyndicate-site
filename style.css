@@ -194,7 +194,7 @@ header, main, footer { position: relative; z-index: 1; }
   margin: 0 auto;
   padding: 0 24px 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
@@ -331,3 +331,51 @@ button:hover { opacity: 0.9; }
   font-size: 0.85rem;
   font-family: 'JetBrains Mono', monospace;
 }
+
+/* Dev Updates card (homepage) */
+.latest-title {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.latest-body {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Whole preview is one link to the entry on the Journal page */
+.latest-link {
+  display: block;
+  margin: 0 -14px 14px;
+  padding: 14px;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.latest-link:hover,
+.latest-link:focus-visible {
+  border-color: var(--accent);
+  background: rgba(94, 234, 212, 0.05);
+  outline: none;
+}
+
+/* Journal page: entry targeted from the homepage */
+.diary-entry { scroll-margin-top: 24px; transition: border-color 0.4s; }
+.diary-entry.entry-highlight { border-color: var(--accent); }
+
+.diary-entry p + p { margin-top: 12px; }
+
+.card-link,
+.contact-email {
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.card-link:hover,
+.contact-email:hover { text-decoration: underline; }
