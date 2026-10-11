@@ -379,3 +379,25 @@ button:hover { opacity: 0.9; }
 
 .card-link:hover,
 .contact-email:hover { text-decoration: underline; }
+
+/* Markdown posts (Journal page) */
+.diary-entry h3 { margin: 26px 0 8px; font-size: 1.05rem; }
+.diary-entry blockquote {
+  margin: 18px 0;
+  padding: 4px 0 4px 18px;
+  border-left: 3px solid var(--accent);
+  color: var(--text-dim);
+  font-style: italic;
+}
+.diary-entry blockquote p { color: inherit; }
+.diary-entry ul { margin: 12px 0; padding-left: 22px; }
+.diary-entry li + li { margin-top: 6px; }
+.diary-entry a { color: var(--accent); }
+.diary-entry code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  background: var(--bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.diary-entry hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }

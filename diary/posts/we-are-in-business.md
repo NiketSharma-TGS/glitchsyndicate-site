@@ -1,0 +1,36 @@
+I have been living with a Sci-fi world idea for quite some time now, a colony severed from humanity, out there on a different Solar System. I also had some ideas about a TD game which I got after playing NordHold like a maniac last year.
+This led me to unify these ideas; Story of Humanity's orphan colony told via a system rich Tower Defense experience. I want to use this platform to share more about the game through a monthly update and any fun developments that happen along the way.
+
+Today, I would like to share how things came into motion and talk about my workflows as a solo indie dev, share some smart choices where I refused to use generative AI. How I am managing to maintain originality, learn from working on this project while also making use of this technology to boost my efficiency.
+
+> I very strongly believe that as Indie developers, it is upon us to set our own standards of Originality, Authenticity and Ownership.
+
+
+This leads to my AI use policy and how I have decided to go about it in the project.
+I think this is best explained with a section wise breakdown, since every pipeline uses it differently with the foundational principle remaining the same which is to not forgo ownership and creativity.
+### Design:
+After writing loose notes here and there in the month of August, I was ready to sit down and create a first draft this month.
+So I sat down and wrote an expansive first draft that took me about 2 hours. After this I was ready to review, I think this is where a sharp LLM really does well, not writing for you but telling you where you missed. I gave the game design document to Claude to ask me questions about conflicts, overlaps, holes, gaps in it but to never supply me an idea unless I ask for it in a specific spot, so it asked me questions like a strict reviewer.
+I got a big set of questions which made me really think and quite intensively so. I made sure that this time my draft is as good as I can make it, at least everything I want in the first milestone. What I got back were more questions which would've taken me either multiple reads by myself or another person who is interested enough to unearth these questions. This intense back and forth went for hours before I did a final read where I could confidently assess that I have enough to get me started with the core game loop, a good set of features to put in backlog and also some really unique things that I am yet to see in a Tower Defence game. This feedback and revision flow would have taken days with a person but having a good strict reviewer on demand converged this otherwise scattered effort to just half a day.
+AI in the loop, not the other way around.
+
+### Gameplay:
+I have been learning gameplay programming in UE, on and off for almost a decade now, I would make a small mechanic then never go back to working on it again. Despite the poor discipline, I had learnt enough by this time to get me started at least with the basics.
+I think the community in general has somewhat accepted use of agentic coding by this point and we are talking beyond generating boilerplate. 
+
+> However, I personally could not bring myself to be able to create something which is beyond my capability of making it myself.
+
+Therefore, I have Claude Code running in purely Review and Tutor mode. Since this is my first time making something that spans beyond two .cpp files, I really want this to be learning experience too. I wouldn't be surprised if my policy on this changes on my next project in a year or two but this Space colony is being built with pure labor of love. Basically, I have reduced Claude Code to a teacher sitting inside my IDE terminal who can occasionally jump in when I am really stuck, otherwise it mostly reviews my code or helps me find solutions in the UE Documentation or reads crash logs which saves so much time from googling. I don't feel the need to exit my VS window as much now as I used to when I was making a small Tank Game prototype couple of years ago.
+This really made things fast, whenever I hit a wall, my rule is to think about it for 15min. by myself at first before seeking help. I really want to ship this game so there has to be a self-imposed limit on how far I can keep treating it as a learning experiment.
+### Art:
+Art is not my strong suit, I don't enjoy making assets really but I can't compromise on quality or my vision either. One of the biggest cop-out in gameDev is using Generative AI, unless I want to see a quick visualization of something I have in mind or make a flash card for notes or something, I can't bring myself to accept generative AI being the main source of Game Art. I think it is also looked down upon the most and rightfully so in my opinion. It also comes under that consumer facing AI use which Steam asks you to disclose.
+How did I solve this as a solo dev with AI in a healthy way while sticking to my principle of Originality, Authenticity and Ownership? Again, with the AI in the loop approach, where neither the idea comes from AI nor the final product. I have been hand drawing sketches in 2D, in multiple perspectives for each object which I feed into Claude to generate me a Blender Python Script based on my drawings. Then I run the bpy in Blender to get a base mesh to work upon which I then modify and sculpt with hand. All the textures are done by hand as well.
+So far this has been the process, it is not as fast as what I have seen other people in similar situations do in 2026 but I wanted to be the spine of my artwork.
+### Sound:
+This requires a post of its own. I have prior experience making music in FL Studio but this time I am trying Ableton as it suits the synth heavy ambient music I am going for but I have not taken any strides in this department yet. Maybe in next month or so I will have a snippet to share.
+Pretty much the same situation for SFX. 
+### Misc.
+I must make this clear since I have opted for transparency with the development process and my use of AI in the game. The things which lie outside of the actual game are carriers for me to deliver the game to you. Therefore, to save time and make this possible as a solo indie, things like this website, a lot of legal research about IPs, setting up a company and marketing research are AI driven. This also includes looking for sources and references online to compare the story, characters and the world I am building with existing material out there to avoid any unintentional overlaps with another IP. These are those non-technical fields where I would just fall flat without help. I believe people often don't realize that a lot of the things that slow down game development are not directly related to the actual development process.
+
+September was quite interesting for The Glitch Syndicate, a lot of things brewing inside for almost a year have finally gotten a chance to be written down in text, planned, visualized and now getting turned into a playable experience.
+I have come up with an interesting world with characters and factions that have competing morals to have a book worthy story and a sci-fi world complex enough to have a part of that story told via an exciting Tower Defence game which I can't wait to build and share with you.
