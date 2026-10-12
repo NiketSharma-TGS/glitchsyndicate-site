@@ -401,3 +401,18 @@ button:hover { opacity: 0.9; }
   border-radius: 4px;
 }
 .diary-entry hr { border: 0; border-top: 1px solid var(--border); margin: 24px 0; }
+
+/* Pixel-art skyline animation on the hero divider (see skyline.js) */
+.hero { position: relative; }
+
+.skyline {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  z-index: 3;
+  pointer-events: none;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@media print { .skyline { display: none; } }
